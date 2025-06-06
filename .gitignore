@@ -1,42 +1,102 @@
-# See http://help.github.com/ignore-files/ for more about ignoring files.
+# =========== Java / Spring Boot ===========
+/target/
+/bin/
+/build/
+/out/
+*.class
+*.jar
+*.war
+*.ear
+*.log
 
-# Compiled output
-/dist
-/tmp
-/out-tsc
-/bazel-out
+# Eclipse / IntelliJ / VSCode project files
+/.idea/
+/.vscode/
+/*.iml
+/.project
+/.classpath
+/.settings/
+/*.launch
 
-# Node
-/node_modules
-npm-debug.log
-yarn-error.log
-
-# IDEs and editors
-.idea/
-.project
-.classpath
-.c9/
-*.launch
+# Maven
+.mvn/
 .settings/
-*.sublime-workspace
+dependency-reduced-pom.xml
+release.properties
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+log/
 
-# Visual Studio Code
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
-.history/*
+# Gradle (si utilisé)
+/.gradle/
+/build/
 
-# Miscellaneous
-/.angular/cache
-.sass-cache/
-/connect.lock
-/coverage
-/libpeerconnection.log
-testem.log
-/typings
+# =========== Node / Angular ===========
+/node_modules/
+/dist/
+/tmp/
+/out-tsc/
+/coverage/
+/.angular/cache/
+/.angular/
+/package-lock.json
+/yarn.lock
 
-# System files
+# Angular CLI files
+.angular/
+
+# Angular environment files
+/src/environments/environment*.ts
+
+# =========== Docker ===========
+# Ignore les volumes, containers, images, logs Docker générés localement
+docker-compose.override.yml
+.docker/
+*.dockerignore
+
+# =========== OS et éditeur ===========
+# macOS
 .DS_Store
+
+# Windows
 Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux
+*~
+
+# Logs
+*.log
+
+# Secrets and environment variables
+.env
+.env.local
+.env.*.local
+*.secret
+*.key
+
+# Autres fichiers temporaires
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ================== Specific ===================
+# Adminer logs or uploads (si dossier spécifique)
+adminer/uploads/
+adminer/logs/
+
+# IntelliJ specific
+.idea/
+
+# VSCode specific
+.vscode/
+
+# Test reports
+test-results/
+
+# Others
+*.swp
+*.swo
