@@ -1,0 +1,6 @@
+com/hemza/rental_backend/service/UserService.class
+com/hemza/rental_backend/controller/UserController.class
+com/hemza/rental_backend/RentalBackendApplication.class
+com/hemza/rental_backend/dto/UserDTO.class
+com/hemza/rental_backend/repository/UserRepository.class
+com/hemza/rental_backend/model/User.class

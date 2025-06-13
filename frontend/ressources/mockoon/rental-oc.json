@@ -1,11 +1,12 @@
 {
-  "uuid": "7bd3e9f8-63b1-4862-98a8-f4f4cf4806a0",
+  "uuid": "69283dcb-4590-43c4-8a5b-02b5585afb98",
   "lastMigration": 33,
   "name": "Rental oc",
-  "endpointPrefix": "api",
+  "endpointPrefix": "",
   "latency": 0,
-  "port": 3001,
+  "port": 3002,
   "hostname": "",
+  "folders": [],
   "routes": [
     {
       "uuid": "822a0106-1c27-4f6b-92d0-89da3da205cf",
@@ -659,7 +660,6 @@
     }
   ],
   "data": [],
-  "folders": [],
   "rootChildren": [
     {
       "type": "route",
