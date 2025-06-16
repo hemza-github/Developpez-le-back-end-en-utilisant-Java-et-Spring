@@ -21,13 +21,9 @@ public class SecurityConfig {
             .anyRequest().permitAll())
         // 🧾 Active le mode HTTP Basic (ici, vide car aucun endpoint n’est sécurisé)
         .httpBasic(basic -> {
-        })
-        // 🚫 Désactive le formulaire de connexion généré automatiquement par Spring
-        // Security
-        .formLogin(form -> form.disable())
-        // 🚫 Désactive le mécanisme de logout via une interface
-        .logout(logout -> logout.disable());
+        });
 
+        
     // 🔄 Retourne l’objet de configuration construit
     return http.build();
   }

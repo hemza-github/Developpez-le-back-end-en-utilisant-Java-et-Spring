@@ -1,12 +1,15 @@
 package com.hemza.rental_backend.service;
 
+import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
+import com.hemza.rental_backend.dto.LoginRequestDTO;
 import com.hemza.rental_backend.dto.RegisterRequestDTO;
 import com.hemza.rental_backend.model.User;
 import com.hemza.rental_backend.repository.UserRepository;
+import com.hemza.rental_backend.security.JwtService;
 
 // Indique à Spring que cette classe contient une logique métier et peut être injectée ailleurs
 @Service
@@ -17,7 +20,9 @@ public class UserService {
   private UserRepository userRepository;
   // Permet de hasher les mots de passe avant stockage
   @Autowired
-  private PasswordEncoder passwordEncoder; // Injection du bean PasswordEncoder
+  private PasswordEncoder passwordEncoder;
+  @Autowired
+  private JwtService jwtService;
 
   /**
    * Enregistre un nouvel utilisateur à partir d'une requête de type
@@ -46,7 +51,26 @@ public class UserService {
 
     // todo : appeler le service de creation de token et retourner le token renvoyer
 
-    return "token";
+    // ✅ Retourne un token JWT directement après inscription
+    return jwtService.generateToken(user.getEmail());
 
+  }
+
+  // Nouvelle méthode login à ajouter
+  public String login(LoginRequestDTO request) {
+    Optional<User> userOpt = userRepository.findByEmail(request.getEmail());
+    if (userOpt.isEmpty()) {
+      throw new IllegalArgumentException("Utilisateur non trouvé.");
+    }
+
+    User user = userOpt.get();
+
+    // Vérifie que le mot de passe est correct
+    if (!passwordEncoder.matches(request.getPassword(), user.getPassword())) {
+      throw new IllegalArgumentException("Mot de passe incorrect.");
+    }
+
+    // Génère et retourne le token JWT
+    return jwtService.generateToken(user.getEmail());
   }
 }

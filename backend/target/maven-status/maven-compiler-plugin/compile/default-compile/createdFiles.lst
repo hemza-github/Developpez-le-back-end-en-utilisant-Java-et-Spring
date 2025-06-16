@@ -1,10 +1,13 @@
+com/hemza/rental_backend/security/JwtService.class
+com/hemza/rental_backend/RentalBackendApplication.class
+com/hemza/rental_backend/controller/AuthController.class
+com/hemza/rental_backend/security/SecurityConfig.class
+com/hemza/rental_backend/dto/AuthSuccess.class
 com/hemza/rental_backend/service/UserService.class
 com/hemza/rental_backend/dto/RegisterRequestDTO.class
 com/hemza/rental_backend/config/CorsConfig.class
-com/hemza/rental_backend/RentalBackendApplication.class
 com/hemza/rental_backend/config/PasswordEncoderConfig.class
+com/hemza/rental_backend/dto/LoginRequestDTO.class
 com/hemza/rental_backend/repository/UserRepository.class
-com/hemza/rental_backend/controller/AuthController.class
-com/hemza/rental_backend/security/SecurityConfig.class
 com/hemza/rental_backend/config/CorsConfig$1.class
 com/hemza/rental_backend/model/User.class

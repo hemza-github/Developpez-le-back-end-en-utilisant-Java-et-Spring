@@ -2,8 +2,11 @@
 /home/hemza/Bureau/OC-room/P3/Developpez-le-back-end-en-utilisant-Java-et-Spring/backend/src/main/java/com/hemza/rental_backend/config/CorsConfig.java
 /home/hemza/Bureau/OC-room/P3/Developpez-le-back-end-en-utilisant-Java-et-Spring/backend/src/main/java/com/hemza/rental_backend/config/PasswordEncoderConfig.java
 /home/hemza/Bureau/OC-room/P3/Developpez-le-back-end-en-utilisant-Java-et-Spring/backend/src/main/java/com/hemza/rental_backend/controller/AuthController.java
+/home/hemza/Bureau/OC-room/P3/Developpez-le-back-end-en-utilisant-Java-et-Spring/backend/src/main/java/com/hemza/rental_backend/dto/AuthSuccess.java
+/home/hemza/Bureau/OC-room/P3/Developpez-le-back-end-en-utilisant-Java-et-Spring/backend/src/main/java/com/hemza/rental_backend/dto/LoginRequestDTO.java
 /home/hemza/Bureau/OC-room/P3/Developpez-le-back-end-en-utilisant-Java-et-Spring/backend/src/main/java/com/hemza/rental_backend/dto/RegisterRequestDTO.java
 /home/hemza/Bureau/OC-room/P3/Developpez-le-back-end-en-utilisant-Java-et-Spring/backend/src/main/java/com/hemza/rental_backend/model/User.java
 /home/hemza/Bureau/OC-room/P3/Developpez-le-back-end-en-utilisant-Java-et-Spring/backend/src/main/java/com/hemza/rental_backend/repository/UserRepository.java
+/home/hemza/Bureau/OC-room/P3/Developpez-le-back-end-en-utilisant-Java-et-Spring/backend/src/main/java/com/hemza/rental_backend/security/JwtService.java
 /home/hemza/Bureau/OC-room/P3/Developpez-le-back-end-en-utilisant-Java-et-Spring/backend/src/main/java/com/hemza/rental_backend/security/SecurityConfig.java
 /home/hemza/Bureau/OC-room/P3/Developpez-le-back-end-en-utilisant-Java-et-Spring/backend/src/main/java/com/hemza/rental_backend/service/UserService.java
